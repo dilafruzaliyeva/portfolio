@@ -1,1 +1,24 @@
 @import 'font.css';
+
+:root{
+    --primary-font-face: 'Montserrat';
+    --secondary-font-face: 'Trebuchet';
+    --primary-text-color: #323232 ;
+    --secondary-text-color: white ;
+    --secondary-title-color: #7177F1;
+    --primary-background: #151437;
+    --secondary-title-color: white;
+    --secondary-title-color-alt:#7177F1 ;
+    --primary-link-color: #7177F1;
+    --secondary-link-color: white ;
+}
+
+body{
+    background: var(--primary-background);
+    font-family: var(--primary-font-face);
+    color: var(--primary-text-color);
+}
+
+.logo::before{
+     content: url(../img/logo-light.png);
+}

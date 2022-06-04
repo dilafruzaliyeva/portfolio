@@ -1,27 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="libs/bootstrap.min.css">
-    <link rel="stylesheet" href="libs/all.min.css">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/media.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Work | Portfolio website</title>
+  <link rel="stylesheet" href="libs/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/all.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/media.css">
 </head>
+
 <body>
-    <header>
-        <nav class=" container¬ navbar-expand-lg">
-            <a href="#!" class="logo"></a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
-        </nav>
-    </header>
-    <main></main>
-    <footer>
-    </footer>
-    <script src="libs/bootstrap.bundle.min.js"></script>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg container justify-content-between">
+      <a href="#!" class="logo"></a>
+      <button class="navbar-toggler header__toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <i class="far fa-shield-virus"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="nav">
+        <ul class="navbar-nav align-items-end align-items-lg-center">
+          <li><a class="header__link" href="#!">About me</a></li>
+          <li><a class="header__link" href="#!">Works</a></li>
+          <li><a class="header__button" href="#!">to order</a></li>
+          <li><a class="header__tel" href="#!"><i class="fal fa-phone-square-alt"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="intro container carousel slide carousel-fade" data-bs-ride="carousel" id="slider">
+      <div class="row">
+        <div class="col-xl-6">
+          <div class="col-sm-10 ms-auto">
+            <p class="intro__subtitle">My beginning</p>
+            <h1 class="intro__title">Self-development and training in the training center</h1>
+            <a href="#!" class="intro__button">GET STARTED NOW</a>
+          </div>
+          <div class="row row-cols-2 row-cols-sm-3 justify-content-center">
+            <div class="col text-center">
+              <img src="images/html.png" alt="HTML logo" class="intro__logo">
+              <h4 class="intro__name">HTML</h4>
+            </div>
+            <div class="col text-center">
+              <img src="images/css.png" alt="CSS logo" class="intro__logo">
+              <h4 class="intro__name">CSS</h4>
+            </div>
+            <div class="col text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="intro__logo intro__logo_svg" viewBox="0 0 118 94"
+                role="img">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                  fill="currentColor"></path>
+              </svg>
+              <h4 class="intro__name">Bootstrap 5</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 mt-5 mt-xl-0">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/carousel_img_1.png" alt="" class="intro__image">
+            </div>
+            <div class="carousel-item">
+              <img src="images/carousel_img_2.png" alt="" class="intro__image">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="intro__indicators carousel-indicators">
+        <button data-bs-target="#slider" data-bs-slide-to="0" class="carousel__dot active"></button>
+        <button data-bs-target="#slider" data-bs-slide-to="1" class="carousel__dot"></button>
+      </div>
+    </div>
+    <div class="rect rect_1"></div>
+    <div class="rect rect_2"></div>
+    <div class="rect rect_3"></div>
+    <div class="rect rect_4"></div>
+  </header>
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 about__left">
+          <p class="about__slogan">my work for<span class="about__mark">5+</span></p>
+          <img class="about__image" src="images/about_img.png" alt="Boy sitting on pc">
+        </div>
+        <div class="col-lg-6">
+          <div class="about__right h-100">
+            <h2 class="about__title">What is Frond-End</h2>
+            <p class="about__text">it is the development of of the user interface and functions that run on on the
+              client side of a website or application This is everything that a user sees when opening a or aweb page
+              and with which he interacts.</p>
+            <p class="about__text">This is everything that a user sees when opening a web page and with which he
+              interacts.</p>
+            <a href="#!" class="about__button">go to work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="images/shape_1.png" class="shape shape_1" alt="">
+    <div class="rect rect_5"></div>
+  </section>
+  <section class="capabilities">
+    <div class="container">
+      <h2 class="capabities__title">capabilities</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-5 mb-md-0">
+          <div class="accordion" id="bizaniId">
+            <div class="accordion__item">
+              <h3 class="accordion__header">
+                <button class="accordion__button collapsed" data-bs-toggle="collapse" data-bs-target="#html">
+                  <span class="accordion__header-content">
+                    <img src="images/html.png" alt="html" class="accordion__image">
+                    HTML
+                    <i class="fas fa-caret-down accordion__icon"></i>
+                  </span>
+                </button>
+              </h3>
+              <div id="html" class="accordion-collapse collapse" data-bs-parent="#bizaniId">
+                <div class="accordion__body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis felis dui quis eget suspendisse
+                  rutrum orci. Elementum, ultrices dictum cras sit volutpat morbi adipiscing ut. Convallis faucibus
+                  ligula blandit enim. Accumsan est
+                </div>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <h3 class="accordion__header">
+                <button class="accordion__button collapsed" data-bs-toggle="collapse" data-bs-target="#css">
+                  <span class="accordion__header-content">
+                    <img src="images/css.png" alt="css" class="accordion__image">
+                    css
+                    <i class="fas fa-caret-down accordion__icon"></i>
+                  </span>
+                </button>
+              </h3>
+              <div id="css" class="accordion-collapse collapse" data-bs-parent="#bizaniId">
+                <div class="accordion__body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis felis dui quis eget suspendisse
+                  rutrum orci. Elementum, ultrices dictum cras sit volutpat morbi adipiscing ut. Convallis faucibus
+                  ligula blandit enim. Accumsan est
+                </div>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <h3 class="accordion__header">
+                <button class="accordion__button" data-bs-toggle="collapse" data-bs-target="#bootstrap">
+                  <span class="accordion__header-content">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="accordion__image" viewBox="0 0 118 94" role="img">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                        fill="currentColor"></path>
+                    </svg>
+                    bootstrap 5
+                    <i class="fas fa-caret-down accordion__icon"></i>
+                  </span>
+                </button>
+              </h3>
+              <div id="bootstrap" class="accordion-collapse collapse show" data-bs-parent="#bizaniId">
+                <div class="accordion__body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis felis dui quis eget suspendisse
+                  rutrum orci. Elementum, ultrices dictum cras sit volutpat morbi adipiscing ut. Convallis faucibus
+                  ligula blandit enim. Accumsan est
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="images/capabilities.png" alt="Capabilities" class="w-100">
+        </div>
+      </div>
+    </div>
+    <div class="rect rect_6"></div>
+  </section>
+  <section class="works">
+    <div class="container">
+      <h2 class="works__title">My Works</h2>
+      <div class="row">
+        <div class="col-lg-3 nav nav-pills works__tabs flex-sm-row flex-lg-column mb-3 mb-lg-0 px-3 px-sm-0 pe-sm-0 pe-lg-3">
+          <button class="works__tab active" data-bs-toggle="pill" data-bs-target="#nike">nike</button>
+          <button class="works__tab" data-bs-toggle="pill" data-bs-target="#thw">the news web</button>
+          <button class="works__tab" data-bs-toggle="pill" data-bs-target="#blue">blue marketing</button>
+          <button class="works__tab" data-bs-toggle="pill" data-bs-target="#market">boulevard market</button>
+          <button class="works__tab" data-bs-toggle="pill" data-bs-target="#vue">vue cinemas</button>
+          <button class="works__tab" data-bs-toggle="pill" data-bs-target="#street">street 88</button>
+        </div>
+        <div class="col-lg-9 tab-content">
+          <div class="tab-pane fade show active h-100" id="nike">
+            <div class="row works__item">
+              <div class="col-md-4 ps-0 mb-3 mb-md-0">
+                <img src="images/nike.png" alt="nike website" class="works__image">
+              </div>
+              <div class="col-md-8">
+                <h3 class="works__name">NIKE Layout</h3>
+                <p class="works__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci, mauris neque, gravida amet diam cum nisl enim. Vestibulum, risus, maecenas et nisi lobortis malesuada vel. Neque, sem tellus sed a, enim egestas. Mi mi id amet, lorem vitae lectus risus diam </p>
+                <p class="works__text">nunc. Eget nunc eget lectus amet feugiat lobortis sit sit non eu. Nunc, mauris viverra quis sapien quam. Non parturient sed </p>
+                <a href="#!" class="works__button">details</a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade  h-100" id="thw">
+            <div class="row works__item">
+              <div class="col-md-4 ps-0 mb-3 mb-md-0">
+                <img src="images/TNW.png" alt="nike website" class="works__image">
+              </div>
+              <div class="col-md-8">
+                <h3 class="works__name">the news web</h3>
+                <p class="works__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci, mauris neque, gravida amet diam cum nisl enim. Vestibulum, risus, maecenas et nisi lobortis malesuada vel. Neque, sem tellus sed a, enim egestas. Mi mi id amet, lorem vitae lectus risus diam </p>
+                <p class="works__text">nunc. Eget nunc eget lectus amet feugiat lobortis sit sit non eu. Nunc, mauris viverra quis sapien quam. Non parturient sed </p>
+                <a href="#!" class="works__button">details</a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade  h-100" id="blue">
+            <div class="row works__item">
+              <div class="col-md-4 ps-0 mb-3 mb-md-0">
+                <img src="images/Blue marketing.png" alt="nike website" class="works__image">
+              </div>
+              <div class="col-md-8">
+                <h3 class="works__name">blue marketing</h3>
+                <p class="works__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci, mauris neque, gravida amet diam cum nisl enim. Vestibulum, risus, maecenas et nisi lobortis malesuada vel. Neque, sem tellus sed a, enim egestas. Mi mi id amet, lorem vitae lectus risus diam </p>
+                <p class="works__text">nunc. Eget nunc eget lectus amet feugiat lobortis sit sit non eu. Nunc, mauris viverra quis sapien quam. Non parturient sed </p>
+                <a href="#!" class="works__button">details</a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade  h-100" id="market">
+            <div class="row works__item">
+              <div class="col-md-4 ps-0 mb-3 mb-md-0">
+                <img src="images/Boulevard market.png" alt="nike website" class="works__image">
+              </div>
+              <div class="col-md-8">
+                <h3 class="works__name">boulevard market</h3>
+                <p class="works__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci, mauris neque, gravida amet diam cum nisl enim. Vestibulum, risus, maecenas et nisi lobortis malesuada vel. Neque, sem tellus sed a, enim egestas. Mi mi id amet, lorem vitae lectus risus diam </p>
+                <p class="works__text">nunc. Eget nunc eget lectus amet feugiat lobortis sit sit non eu. Nunc, mauris viverra quis sapien quam. Non parturient sed </p>
+                <a href="#!" class="works__button">details</a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade  h-100" id="vue">
+            <div class="row works__item">
+              <div class="col-md-4 ps-0 mb-3 mb-md-0">
+                <img src="images/Vue Cinemas.png" alt="nike website" class="works__image">
+              </div>
+              <div class="col-md-8">
+                <h3 class="works__name">vue cinemas</h3>
+                <p class="works__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci, mauris neque, gravida amet diam cum nisl enim. Vestibulum, risus, maecenas et nisi lobortis malesuada vel. Neque, sem tellus sed a, enim egestas. Mi mi id amet, lorem vitae lectus risus diam </p>
+                <p class="works__text">nunc. Eget nunc eget lectus amet feugiat lobortis sit sit non eu. Nunc, mauris viverra quis sapien quam. Non parturient sed </p>
+                <a href="#!" class="works__button">details</a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade  h-100" id="street">
+            <div class="row works__item">
+              <div class="col-md-4 ps-0 mb-3 mb-md-0">
+                <img src="images/Street88.png" alt="nike website" class="works__image">
+              </div>
+              <div class="col-md-8">
+                <h3 class="works__name">street 88</h3>
+                <p class="works__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci, mauris neque, gravida amet diam cum nisl enim. Vestibulum, risus, maecenas et nisi lobortis malesuada vel. Neque, sem tellus sed a, enim egestas. Mi mi id amet, lorem vitae lectus risus diam </p>
+                <p class="works__text">nunc. Eget nunc eget lectus amet feugiat lobortis sit sit non eu. Nunc, mauris viverra quis sapien quam. Non parturient sed </p>
+                <a href="#!" class="works__button">details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="images/shape_2.png" class="shape shape_2" alt="">
+    <div class="rect rect_8"></div>
+    <div class="rect rect_9"></div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="col-xl-6 ms-auto text-center">
+        <a href="#!" class="logo"></a>
+        <ul class="d-flex justify-content-around flex-wrap mt-4 mb-3 list-unstyled">
+          <li><a href="#!" class="footer__link">about me</a></li>
+          <li><a href="#!" class="footer__link">works</a></li>
+          <li><a href="#!" class="footer__link">contacts</a></li>
+        </ul>
+        <div class="d-flex justify-content-around flex-wrap">
+          <a href="tel:+998935550108" class="footer__link">(239) 555-0108</a>
+          <a href="mailto:guppi@mail.ru" class="footer__link">guppi@mail.ru</a>
+        </div>
+      </div>
+    </div>
+    <div class="rect rect_7"></div>
+  </footer>
+  <script src="libs/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

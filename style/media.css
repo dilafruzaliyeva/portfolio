@@ -1,4 +1,4 @@
-@media(prefers-color-scheme: dark){
+@media(prefers-color-scheme: light){
     :root{
         --primary-text-color: white;
         --primary-background: #151437;
